@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(189, 176, 176);
+    font: arial ;
+}
+.box {
+        margin: 10px;
+        padding: 10px;
+        background-color: rgb(165, 155, 155);
+      }
+.titulo {
+    border-radius: 15px;
+    border-color: black;
+    text-align: center;
+}
+.name {
+    border-radius: 15px;
+}
+

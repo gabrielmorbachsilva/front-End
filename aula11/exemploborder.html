@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+  <title>Box model - content</title>
+
+  <style>
+      body {
+        font-family: Arial;
+        background-color: #f0f0f0;
+        padding: 20px;
+      }
+      .container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      h2 {
+        margin-top: 30px;
+      } 
+      .box {
+        margin: 10px;
+        padding: 10px;
+        background-color: #eee;
+      }
+
+      /*1 - borda simples*/
+      .b1 {
+        border: 2px solid black;
+      }
+
+      /*2 - tipos de borda*/
+      .b2 { border: 3px dashed red;}
+      .b3 { border: 3px dotted blue}
+      .b4 { border: 3px double green}
+
+      /*3 - bordas individuais*/
+      .b5 {
+        border-top: 3px solid red;
+        border-right: 3px solid blue;
+        border-bottom: 3px solid green;
+        border-left: 3px solid orange;
+      }
+
+      /*4 - border width*/
+      .b6 {
+        border-style: solid;
+      }
+
+      /* - border-color*/
+      .b7 {
+        border: 4px solid;
+        border-color: red blue green orange;
+      }
+
+      /*6 - border-radius*/
+      .b8 {
+        border: 3px solid black;
+        border-radius: 15px;
+      }
+      .b9 {
+        width: 100px;
+        height: 100x;
+        border: 3px solid purple;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 100px;
+      }
+      .b10 {
+        border: 5px solid teal;
+      }
+      .b11{
+        border: 3px solid gray;
+        transition: 0.3S;
+      }
+      .b12 hover{
+        border: 3px solid red;
+      }
+      /*10 - imagem com borda*/
+      img {
+        border: 5px solid black;
+      }
+  </style>
+</head>
+  <body>
+     <div class="container">
+          <h1>Exemplo de border</h1>
+          <h2>1. Borda simples</h2>
+          <div class="box b1">border: 2px solid</div>
+          <h2>2. Tipos de borda</h2>
+          <div class="box b2">dashed</div>
+          <div class="box b3">dotted</div>
+          <div class="box b4">double</div>
+          <h2>3. Bordas individuais</h2>
+          <div class="box b5">Cada lado diferente</div>
+          <h2>4. largura da borda</h2>
+          <div class="box b6">border-width</div>
+          <h2>5. Cor da borda</h2>
+          <div class="bos b7">border-color</div>
+          <h2>6. Cantos arredondados</h2>
+          <div class="box b8">border-radius</div>
+          <h2>7. Círulo</h2>
+          <div class="b9">ok</div>
+          <h2>8. Forma abreviada</h2>
+          <div class="box b10">Shorthand</div>
+          <h2>9, Hover</h2>
+          <div class="bor b11">Passe o mouse aqui</div>
+          <h2>10. Imagem com borda</h2>
+          <img src="https://via.placehouder.com/150">
+    </div>
+  </body>
+</html>

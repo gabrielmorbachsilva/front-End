@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Exemplo font-weight</title>
+  <meta http-equiv="Content-type" content="text/html; charset=window-1252">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: (#f0f0f0);
+      padding: 20px;
+    }
+    .container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    /* Valores basicos */
+    .none{
+      text-decoration: none;
+    }
+    .underline {
+      text-decoration: underline;
+    }
+    .overline {
+      text-decoration: overline;
+    }
+    .line-through {
+      text-decoration: line-through;
+    }
+
+    /*Personalização*/
+    .color {
+      text-decoration: underline;
+      text-decoration: red;
+    }
+    .style {
+      text-decoration: underline;
+      text-decoration-style: dashed;
+    }
+    .thickness {
+      text-decoration: underline;
+      text-decoration-thickness: blue 3px;
+    }
+
+    /* Links estilizados*/
+    a {
+      text-decoration: none;
+      color: blue;
+      transition: 0.3s;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: red;
+    }
+
+    /*Forma abreviada*/
+    .shorthand {
+      text-decoration: underline;
+    }
+    
+</style>
+</head>
+  <body>
+    <div class="container">
+      <h1>Exemplo de text-decoration</h1>
+      <h2>Valores básicos</h2>
+      <p class="none">Sem decoração</p>
+      <p class="underline">sublinhado</p>
+      <p class="overline">linha acima</p>
+      <p class="line-through">texto riscado</p>
+      <h2>Personalização</h2>
+      <p class="line-through">texto riscado</p>
+      <p class="line-through">texto riscado</p>
+      <p class="line-through">texto riscado</p>
+    </div>
+      </body>
+</html>

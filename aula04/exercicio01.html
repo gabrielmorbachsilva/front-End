@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=“UTF-8”>
+  <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let quantidade = Number(prompt("Digite o número de maçãs"));
+    let calculo = 0;
+    if (quantidade < 12) {
+        calculo = quantidade * 1.30;
+        alert("Você comprou " +quantidade+ " Maçãs, e o valor total foi de: R$" +calculo.toFixed(2));
+    
+    } else {
+        calculo = quantidade * 1.00;
+        alert("Você comprou " +quantidade+ " Maçãs, e o valor total foi de: R$" +calculo.toFixed(2));
+    }
+    </script>
+
+</body>
+
+</html>

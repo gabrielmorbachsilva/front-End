@@ -1,0 +1,5 @@
+https://ead.hardware.org.br/login/index.php
+
+git config --global user.name"gabrielmorbach" 
+git config --global user.email"gabrielmorbachsilva@gmail.com"
+git config --list

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=“UTF-8”>
+  <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    document.write("<h1>Metodos de manipulação de strings</h1>");
+    let palavra = "JavaScript";
+    document.write("A palavra original " + palavra + "<br>");
+    document.write("Colocando a palavra para Maiúsculo :" + palavra.toUpperCase() + "<br>");
+    document.write("Colocando a palavra para Minúsculo :" + palavra.toLowerCase() + "<br><br>");
+
+    let frase = "   Olá mundo   ";
+    document.write("A frase original é " +frase+ ".<br>");
+    document.write("Remover espaços em branco :" + frase.trim() + "<br><br>");
+
+    frase = "Eu gosto de java";
+    document.write("A frase original é " +frase+ ".<br>");
+    document.write("Substituição :" + frase.replace("java","javascript") + "<br>"); //O que quero substituir
+    document.write("Outra forma de substituição :"+"a a a".replaceAll("a","b") + "<br><br>");
+
+    let texto  = "maça,banana,uva";
+    document.write("O texto original é " +texto+ "<br>");
+
+    let frutas = texto.split(","); // Cria um array(lista) com os elementos do texto
+    document.write("A lista tem os elementos : " + frutas + "<br>");
+    document.write("Acesso pelo indice da lista 0 " + frutas[0] + "<br><br>");
+
+    let palavras = ["Olá" , "Mundo" , "Javascript"];
+    document.write("A lista original : " + palavras + "<br>");
+    frase = palavras.join(" "); // junta as palavras da lista 
+    document.write("Mostrar a frase usando o join : " +frase+ "<br><br>");
+
+    texto = "JavaScript";
+    document.write("Texto original : " + texto + "<br>");
+    document.write("Retorna na primera incidência da letra S: " + texto.indexOf("S") +"<br>");
+    document.write("Verifica se tem a palavra Java : " + texto.includes("Java") +"<br>");
+    document.write("A substring da posição 0 a 4 :" + texto.substring(0,4)+"<br><br>"); // Onde começa e quantas casas
+    document.write("Para descobrir o tamanho da string : " +texto.length)
+    </script>
+
+</body>
+
+</html>

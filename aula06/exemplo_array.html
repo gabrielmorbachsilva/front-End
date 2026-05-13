@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=“UTF-8”>
+  <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    document.write("<h3>Arrays e seus métodos de manipulação</h3>");
+    let frutas = ["Maça","Banana","Uva"]; //Arrays de frutas
+    document.write("O Array frutas tem os seguintes elementos: " + frutas); // Mostra todos os indices
+    document.write("<br>O documento do indice 0 é: " + frutas[0]); // Mostra maça
+
+    document.write("<h4>Adicionando e removendo elementos</h4>");
+    document.write("Vou adicionar um elemento no final da lista com push()");
+    frutas.push("Laranja");
+    document.write("<br>Adicionei o elemento Laranja: " + frutas); // Maça,Banana,Uva,Laranja
+
+    document.write("<br>Vou adicionar um elemento no inicio da lista com unshift()");
+    frutas.unshift("Mamão");
+    document.write("<br>Adicionei o elemento Mamão: " + frutas); //Mamão,Maça,Banana,Uva,Laranja
+
+    document.write("<br>Vou remover o elemento na ultima posição com o pop()");
+    frutas.pop();
+    document.write("<br>Removi o ultimo elemento: " + frutas); //Mamão,Maça,Banana,Uva
+
+    document.write("<br>Vou remover o elemento na primeira posição com o shift()");
+    frutas.shift();
+    document.write("<br>Removi o primeiro elemento: " + frutas); //Maça,Banana,Uva
+
+    document.write("<br>Vou remover um elemento utilizando o método splice()");
+    let numeros = [1,2,3];
+    document.write("Array original: " + numeros);
+    numeros.splice(1, 1, 10); // posição do inicio, item a remover/substituir, valor a adicionar.
+    document.write("<br> O Array novo é: " + numeros); // 1,10,3, antes = 1,2,3
+
+    document.write("<br>Vou setar a posição inicial, o segundo paramentro de");
+    document.write(" delegação/substituição deixo 0 ai ele acrescenta, este adiciona "); 
+    document.write("o elemento, ou elementos");
+    numeros.splice(1, 0, 10,20); // posição do inicio, item a remover/substituir, valor a adicionar.
+    document.write("<br> O Array novo é: " + numeros); // 1,10,3, antes = 1,2,3
+    </script>
+
+</body>
+
+</html>

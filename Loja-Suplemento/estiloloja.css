@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(12, 12, 12);
+    font-family: arial;
+    color: white;
+    padding: 20px;
+}
+.box {
+    background-color: rgb(65, 0, 0);
+    padding: 10px;
+    width: 150px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(114, 0, 0);
+    display: inline-block;
+}
+.container {
+    background-color: rgb(22, 22, 22);
+    padding: 20px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    position: absolute;
+}
+.fotol {    
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(114, 0, 0);
+    display: block;
+    margin: 0 auto;
+}
+.fotop {
+    width: 100px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    display: block;
+    margin: 0 auto;
+}
+.produto {
+    text-align: center;
+    padding: 15px;
+}
+h3 {
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 0 0 20px rgb(114, 0, 0);
+    color: rgb(170, 142, 50);
+}
+input {
+    background-color: rgb(170, 142, 50);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    border-radius: 5px;
+}

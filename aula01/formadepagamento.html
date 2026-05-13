@@ -1,0 +1,22 @@
+<!Doctype html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scala="1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var valor = Number(prompt("Digite valor do produto: ")) // recebe valor do produto
+        var avista = valor - ( valor * 0.10); // calculo a vista, desconto
+        var parcelado = valor / 3; // calculo parcelado, 3 vezes
+        // mostrar os resultados das formas de pagamento
+        alert("Preço do produto: R$ " + valor.toFixed(2) + 
+        "\nÁ vista: R$ " + avista.toFixed(2) + 
+        "\nOu 3x de: R$ " + parcelado.toFixed(2))
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=“UTF-8”>
+  <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    document.write("<h3>Exemplo de uso do fprEach</h3>");
+    let nomes = ["Marcos","Eduardo","Guilherme"];
+    nomes.forEache(nome => {
+      document.write("Nome :" +nome+"<br>");
+    });
+
+    document.write("<h3>Exemplo de uso do map</h3>");
+    let numeros = [1,2,3];
+    let = dobro = numeros.map(n => n * 2);
+    document.write("O Aray original :" +numeros+ " o array criado com o map() :" +dobro+ "</br>");
+
+    document.write("<h3>Exemplo de uso do filter</h3>");
+    numeros = [1,2,3,4,5,6];
+    let pares = numeros.filter(n => n % 2 === 0)
+    document.write("O Aray original :" +numeros+ " o array criado com o filter() :" +dobro+ "</br>");
+
+    document.write("<h3>Exemplo de uso do reduce</h3>");
+    let precos = [10,20,30];
+    let total = precos.reduce((acumulador, preco) =>
+    {return acumulador + preco; }, 0);
+    document.write("O valor total é " + total);
+    </script>
+
+</body>
+
+</html>

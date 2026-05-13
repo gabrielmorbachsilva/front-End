@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=“UTF-8”>
+  <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let j = 1;
+    let i = 1;
+    let valTotal = 0;
+    do {
+      let produtos = [prompt("Digite o iten do seu carrinho")];
+      let preco = [prompt("Digite os preços do iten do seu carrinho")];
+      let quantidade = [prompt("Digite a quantidade do item do seu carrinho")];
+      j ++;
+      valTotal = quantidade * preco;
+      document.write("</br>Produto: " +produtos+ "</br> Preço: " +preco+ "</br> Quantidade: " +quantidade);
+      document.write("</br>Valor total do item: " + valTotal.toFixed(2));
+      document.write("</br>--------------//-------------</br>");
+    } while (j <= 11);
+
+    </script>
+
+</body>
+
+</html>
