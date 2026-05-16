@@ -41,6 +41,7 @@ footer {
     border: 1px solid black;
     height: 25px;
     border-radius: 10px;
+    text-align: center;
     margin: 20px;
     width: 200px;
     display: flex;
@@ -48,29 +49,34 @@ footer {
 }
 
 .ce {
-    width: 300px;
+    width: 400px;
 }
 
 .cc {
-    width: 600px;
+    width: 800px;
     min-height: 93%;
 }
 
 .cd {
-    width: 300px;
+    width: 400px;
 }
 
 .card {
     background-color: rgb(255, 255, 255);
-    border: 1px solid black;
     border-radius: 15px;
     margin: 20px;
     width: 300px;
-    height: 220px;
+    height: 250px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+}
+
+.card :hover {
+
+transform: scale(1.2);
 }
 
 img {
-    border-radius: 15px;
-    width: 156px;
-    border: 1px solid black;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 228px;
 }
