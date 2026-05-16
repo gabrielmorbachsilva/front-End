@@ -3,12 +3,14 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 header {
     background-color: black;
     color: white;
     text-align: center;
     padding: 20px;
 }
+
 main {
     flex: 1;
     display: flex;
@@ -18,12 +20,14 @@ main {
     display: grid;
     grid-template-columns: auto auto auto;
 }
+
 footer {
     background-color: black;
     color: white;
     text-align: center;
     padding: 20px;
 }
+
 .geral {
     font-family: Arial, Helvetica, sans-serif;
     flex-wrap: wrap;
@@ -31,38 +35,42 @@ footer {
     top: 0;
     width: 100%;
 }
+
 .box {
     background-color: rgb(235, 235, 235);
     border: 1px solid black;
     height: 25px;
     border-radius: 10px;
-    text-align: center;
     margin: 20px;
     width: 200px;
     display: flex;
     align-items: center;
 }
-.ce{
-    width: 200px;
-    
+
+.ce {
+    width: 300px;
 }
+
 .cc {
-    width: 400px;
+    width: 600px;
     min-height: 93%;
 }
+
 .cd {
-    width: 200px;
+    width: 300px;
 }
+
 .card {
     background-color: rgb(255, 255, 255);
     border: 1px solid black;
-    border-radius: 10px;
-    text-align: center;
+    border-radius: 15px;
     margin: 20px;
     width: 300px;
-    height: 165px;https://ead.hardware.org.br/login/index.php
+    height: 220px;
 }
+
 img {
-    border-radius: 10px;
-    width: 100px;
+    border-radius: 15px;
+    width: 156px;
+    border: 1px solid black;
 }
