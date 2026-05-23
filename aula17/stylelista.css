@@ -1,0 +1,70 @@
+/*Configurações globais*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: normal, arial;
+    background-color: rgb(221, 221, 221);
+}
+body {
+    min-height: 100vh;
+}
+ /*Box geral do código*/
+.container {
+    background-color: rgb(255, 255, 255);
+    width: 800px;
+    height: 600px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgb(143, 143, 143);
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+/*Espaço entre elementos*/
+.break {
+    background-color: rgb(255, 255, 255);
+    flex-basis: 100%;
+    padding: 1%;
+}
+/*Digitação*/
+input{
+    background-color: rgb(255, 255, 255);
+    width: 550px;
+    height: 35px;
+    border-radius: 5px;
+    border-color: rgb(230, 230, 230);
+    border-collapse: collapse;
+}
+/*Botão*/
+.adiciona {
+    background-color: rgb(0, 0, 163);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 550px;
+    height: 35px;
+    font-size: 16px;
+}
+/*Titulo*/
+h1 {
+    background-color: rgb(255, 255, 255);
+}
+/*Tabela*/
+.cabeça {
+    background-color: rgb(0, 0, 163);
+    color: white;
+    padding: 5px;
+    width: 275px;
+    height: 35px;
+}
+table{
+    border-collapse: collapse;
+    justify-content: center;
+    display: inline-block;
+    text-align: center;
+}
+
+/* deixar a pagina resposiva
+adicionar uma linha abaixo dos td, para dividir os elementos a cada digitação,
+se atentar a não mudar o tamanho das linahs, mas sim adicinar para preencher too o espaço e a diferença vai ser o padding geral da box*/

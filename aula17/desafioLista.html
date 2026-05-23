@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de produtos</title>
+    <link rel="stylesheet" href="stylelista.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Lista de itens</h1>
+        <!--Digitação - recebe os dados do item-->
+        <input type="text" id="item" placeholder="Digite o produto">
+        <div class="break"></div>
+        <input type="number" id="valor" placeholder="digite o preço">
+        <div class="break"></div>
+
+        <!--botão - envia o item-->
+        <button onclick="receber()" class="adiciona">Adicionar produto</button>
+        <div class="break"></div>
+
+        <!--Tabela de itens-->
+        <table border="0">
+            <thead>
+                <tr>
+                    <th class="cabeça">Nome</th>
+                    <th class="cabeça">Preço</th>
+                </tr>
+            </thead>
+            <tbody id="tabela">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="scriptlista"></script>
+</body>
+</html>

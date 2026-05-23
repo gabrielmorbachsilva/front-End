@@ -82,11 +82,7 @@
 
     <div class="container">
         <h1>Lista de Tarefas</h1>
-        <input 
-            type="text" 
-            id="tarefa" 
-            placeholder="Digite uma tarefa"
-        >
+        <input type="text" id="tarefa" placeholder="Digite uma tarefa">
         <button onclick="adicionar()">
             Adicionar Tarefa
         </button>
@@ -95,9 +91,7 @@
     <script>
         function adicionar() {
             // pega o texto digitado
-            let texto = document
-            .getElementById("tarefa")
-            .value;
+            let texto = document.getElementById("tarefa").value;
             // verifica se está vazio
             if(texto == "") {
 
@@ -113,13 +107,9 @@
                 item.remove();
             }
             // adiciona na lista
-            document
-            .getElementById("lista")
-            .appendChild(item);
+            document.getElementById("lista").appendChild(item);
             // limpa o campo
-            document
-            .getElementById("tarefa")
-            .value = "";
+            document.getElementById("tarefa").value = "";
         }
     </script>
 
