@@ -1,36 +1,64 @@
-* {
-    font-family: arial;
-    font-size: 18px;
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    background-color: #f0f0f0;
 }
 
-#botaoa {
+/* BOTÃO ABRIR */
+
+#abrir{
     background-color: blue;
-    border-radius: 5px;
-    text-align: center;
     color: white;
-}
-#botaoa:hover {
-    transform: scale(1.2);
-    transition: transform 0.6s;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-#botaof {
+#abrir:hover{
+    background-color: rgb(0, 0, 180);
+}
+
+/* FUNDO ESCURO */
+
+.modal{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* JANELA */
+
+.janela{
+    background-color: white;
+    width: 320px;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* BOTÃO FECHAR */
+
+#fechar{
     background-color: red;
-    border-radius: 5px;
-    text-align: center;
     color: white;
-}
-#botaof:hover {
-    transform: scale(1.2);
-    transition: transform 0.6s;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
 }
 
-#fechar {
-    background-color: rgb(247, 247, 247);
-    border-radius: 10px;
-    width: 300px;
-    height: 145px;
-    text-align: center;
-    border-color: rgb(215, 215, 215);
-    padding: 10px;
+#fechar:hover{
+    background-color: darkred;
 }
