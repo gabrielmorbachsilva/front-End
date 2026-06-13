@@ -1,0 +1,149 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(236, 236, 236);
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 75vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.geral {
+    font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.box {
+    background-color: white;
+    border: 1px solid black;
+    height: 25px;
+    border-radius: 10px;
+    text-align: none;
+    margin: 20px;
+    width: 200px;
+    display: flex;
+    align-items: none;
+}
+
+.ce {
+    width: 400px;
+    min-height: 93%;
+    border: none;
+}
+
+.cc {
+    width: 900px;
+    min-height: 93%;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cc :hover{
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+.cd {
+    width: 400px;
+    min-height: 93%;
+    border: none;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin: 20px;
+    width: 250px;
+    height: 270px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.card :hover{
+  transform: scale(1);
+}
+
+
+img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 250px;
+ }
+
+ button {
+    background-color: blueviolet;
+    color: white;
+    width: 80px;
+    height: 50px;
+    border-radius: 50px;
+    bottom: 45px;
+    right: 20px;
+    display: flex;
+    text-align: center;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    transition: 0.7s;
+ }
+button:hover {
+    transform: scale(1.1);
+} 
+
+.descri {
+    position: relative;
+}
+
+.tit {
+    width: 80px;
+    height: 50px;
+    right: 1200px;
+    display: flex;
+    text-align: center;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: blueviolet;
+    display: flex;
+    right: 1200px
+}
+
+.opçoes {
+    display: flex;
+    gap: 20px;
+    position: fixed;
+    right: 50px;
+}
+
+.p {
+    display: inline-block;
+}
