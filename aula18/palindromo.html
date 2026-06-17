@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Palíndromo</title>
+  <style>
+    body { 
+        font-family: Arial, Helvetica, sans-serif; 
+        padding: 24px; }
+    .card { 
+        max-width: 520px; 
+        margin: 0 auto; 
+        padding: 16px; 
+        border: 1px solid #ddd; 
+        border-radius: 12px; }
+    input { 
+        width: 100%; 
+        padding: 10px; 
+        font-size: 16px; 
+        margin-top: 8px; }
+    button { 
+        margin-top: 12px; 
+        padding: 10px 14px; 
+        font-size: 16px; 
+        cursor: pointer; }
+    #resultado { 
+        margin-top: 12px; 
+        font-size: 16px; 
+        font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Palíndromo</h1>
+    <label for="palavra">Digite uma palavra:</label>
+    <input id="palavra" type="text" placeholder='Ex: arara ou ovo' />
+
+    <button id="verificar">Verificar</button>
+
+    <div id="resultado" aria-live="polite"></div>
+  </div>
+
+  <script>
+    const input = document.getElementById('palavra');
+    const btn = document.getElementById('verificar');
+    const resultado = document.getElementById('resultado');
+
+    function isPalindromo(str) {
+      // remove espaços e ignora maiúsculas/minúsculas
+      const s = str.trim().toLowerCase();
+      const invertida = s.split('').reverse().join('');
+      return s.length > 0 && s === invertida;
+    }
+
+    btn.addEventListener('click', () => {
+      const texto = input.value;
+
+      if (texto.trim() === '') {
+        resultado.textContent = 'Digite uma palavra para verificar.';
+        return;
+      }
+
+      const ok = isPalindromo(texto);
+      resultado.textContent = ok
+        ? `"${texto}" é um palíndromo.`
+        : `"${texto}" não é um palíndromo.`;
+    });
+
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') btn.click();
+    });
+  </script>
+</body>
+</html>
+

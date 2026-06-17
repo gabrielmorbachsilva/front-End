@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Substituir vogais por *</title>
+  <style>
+    body { 
+        font-family: Arial, Helvetica, sans-serif; 
+        padding: 24px; }
+    .card { 
+        max-width: 620px; 
+        margin: 0 auto; 
+        padding: 16px; 
+        border: 1px solid #ddd; 
+        border-radius: 12px; }
+    input { 
+        width: 100%; 
+        padding: 10px; 
+        font-size: 16px; 
+        margin-top: 8px; }
+    button { 
+        margin-top: 12px; 
+        padding: 10px 14px; 
+        font-size: 16px; 
+        cursor: pointer; }
+    textarea { 
+        width: 100%; 
+        padding: 10px; 
+        font-size: 16px; 
+        margin-top: 8px; 
+        min-height: 90px; 
+        resize: vertical; }
+    #resultado { 
+        margin-top: 12px; 
+        font-size: 16px; 
+        font-weight: 600; 
+        word-break: break-word; }
+    .hint { 
+        color: #555; 
+        font-size: 13px; 
+        margin-top: 6px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Substituir vogais por *</h1>
+
+    <label for="frase">Digite uma frase:</label>
+    <textarea id="frase" placeholder="Ex: Programação é vida"></textarea>
+
+    <button id="trocar">Substituir vogais</button>
+
+    <div id="resultado" aria-live="polite"></div>
+    <div class="hint">Vogais: a, e, i, o, u.</div>
+  </div>
+
+  <script>
+    const fraseEl = document.getElementById('frase');
+    const trocarEl = document.getElementById('trocar');
+    const resultadoEl = document.getElementById('resultado');
+
+    function substituirVogais(texto) {
+      const vogais = 'aeiou';
+      let s = String(texto);
+
+      return s
+        .split('')
+        .map((ch) => {
+          const lower = ch.toLowerCase();
+          return vogais.includes(lower) ? '*' : ch;
+        })
+        .join('');
+    }
+
+    function atualizar() {
+      const texto = fraseEl.value;
+      if (texto.trim() === '') {
+        resultadoEl.textContent = 'Digite uma frase para substituir.';
+        return;
+      }
+      const nova = substituirVogais(texto);
+      resultadoEl.textContent = `Frase: ${nova}`;
+    }
+
+    trocarEl.addEventListener('click', atualizar);
+    fraseEl.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) {
+        atualizar();
+      }
+    });
+  </script>
+</body>
+</html>
+
