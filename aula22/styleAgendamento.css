@@ -1,0 +1,61 @@
+/*Mudança de cor dos campos - Navbar*/
+.nav-item1 .nav-link{
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.nav-item1:hover .nav-link  {
+    background-color:  white ;
+    color: black;
+    transform: scale(1.1);
+}
+.nav-item2 .nav-link{
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.nav-item2:hover .nav-link  {
+    background-color:  white ;
+    color: black;
+    transform: scale(1.1);
+}
+.nav-item3 .nav-link{
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.nav-item3:hover .nav-link  {
+    background-color:  white ;
+    color: black;
+    transform: scale(1.1);
+}
+.nav-item4 .nav-link{
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.nav-item4:hover .nav-link  {
+    background-color:  white ;
+    color: black;
+    transform: scale(1.1);
+}
+.nav-item5 .nav-link{
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.nav-item5:hover .nav-link {
+    background-color:  white ;
+    color: black;
+    transform: scale(1.1);
+}
+.nav-item6 .nav-link{
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.nav-item6:hover .nav-link {
+    background-color:  white ;
+    color: black;
+    transform: scale(1.1);
+}
+/*Espaço entre a tag localização e login*/
+.brake .nav-link {
+    width: 980px;
+}
+/*Rodapé do site*/
+
