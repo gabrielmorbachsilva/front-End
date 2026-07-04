@@ -1,110 +1,280 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styleAgendamento.css">
-    <title>Salão FrontStyle</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styleAgendamento.css">
+  <title>Salão FrontStyle</title>
 </head>
+
 <body>
+  <div class="geral">
+    <!--NAVBAR - CABEÇALHO-->
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <font dir="auto" style="vertical-align: inherit;">
+            <font dir="auto" style="vertical-align: inherit;">FrontStyle</font>
+          </font>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+          aria-controls="navbarColor01" aria-expanded="false" aria-label="Alternar navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Escritas do Navbar-->
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item1">
+              <a class="nav-link" href="#">
+                <font dir="auto" style="vertical-align: inherit;">
+                  <font dir="auto" style="vertical-align: inherit;">Serviços</font>
+                </font>
+              </a>
+            </li>
+            <li class="nav-item2">
+              <a class="nav-link" href="#">
+                <font dir="auto" style="vertical-align: inherit;">
+                  <font dir="auto" style="vertical-align: inherit;">Produtos</font>
+                </font>
+              </a>
+            </li>
+            <li class="nav-item3">
+              <a class="nav-link" href="#">
+                <font dir="auto" style="vertical-align: inherit;">
+                  <font dir="auto" style="vertical-align: inherit;">Agendamentos</font>
+                </font>
+              </a>
+            </li>
+            <li class="nav-item4">
+              <a class="nav-link" href="#">
+                <font dir="auto" style="vertical-align: inherit;">
+                  <font dir="auto" style="vertical-align: inherit;">Contato</font>
+                </font>
+              </a>
+            </li>
+            <li class="nav-item5">
+              <a class="nav-link" href="#">
+                <font dir="auto" style="vertical-align: inherit;">
+                  <font dir="auto" style="vertical-align: inherit;">Localização</font>
+                </font>
+              </a>
+            </li>
+            <li class="brake">
+              <a class="nav-link" href="#">
+                <font dir="auto" style="vertical-align: inherit;">
+                  <font dir="auto" style="vertical-align: inherit;"></font>
+                </font>
+              </a>
+            </li>
+            <li class="nav-item6">
+              <a class="nav-link" href="#">
+                <font dir="auto" style="vertical-align: inherit;">
+                  <font dir="auto" style="vertical-align: inherit;">Login</font>
+                </font>
+              </a>
+            </li>
+          </ul>
+          <!--Botão de buscar-->
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Digitar" aria-label="Digitar">
+            <button class="btn btn-outline-light" type="submit">
+              <font dir="auto" style="vertical-align: inherit;">
+                <font dir="auto" style="vertical-align: inherit;">Buscar</font>
+              </font>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
 
-<!--NAVBAR - CABEÇALHO-->
-<nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
-<div class="container-fluid">
-  <a class="navbar-brand" href="#"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">FrontStyle</font></font></a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Alternar navegação">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <!--Escritas do Navbar-->
-  <div class="collapse navbar-collapse" id="navbarColor01">
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <li class="nav-item1">
-        <a class="nav-link" href="#"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Serviços</font></font></a>
-      </li>
-      <li class="nav-item2">
-        <a class="nav-link" href="#"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Produtos</font></font></a>
-      </li>
-      <li class="nav-item3">
-        <a class="nav-link" href="#"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Agendamentos</font></font></a>
-      </li>
-      <li class="nav-item4">
-        <a class="nav-link" href="#"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Contato</font></font></a>
-      </li>
-      <li class="nav-item5">
-        <a class="nav-link" href="#"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Localização</font></font></a>
-      </li>
-      <li class="brake">
-        <a class="nav-link" href="#"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;"></font></font></a>
-      </li>
-      <li class="nav-item6">
-        <a class="nav-link" href="#"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Login</font></font></a>
-      </li>
-    </ul>
-    <!--Botão de buscar-->
-    <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Digitar" aria-label="Digitar">
-      <button class="btn btn-outline-light" type="submit"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Buscar</font></font></button>
-    </form>
-  </div>
-</div>
-</nav>
+    <main class="layout-3cols">
+      <section class="ce box">
 
-<!--CAROUSEL - CARROSEL-->
-<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
-      <svg aria-label="Placeholder: Third slide" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" height="400" preserveAspectRatio="xMidYMid slice" role="img" width="800" xmlns="http://www.w3.org/2000/svg">
-        <img src="..." class="d-block w-100" alt="...">
-        <title>Placeholder</title>
-        <rect width="100%" height="100%" fill="#555"></rect>
-        <text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text></svg>
-        <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+        <div class="escritas">
+          <h2>Menu lateral</h2>
+          <p>🏡Dashboard</p>
+          <p>📁​Projetos</p>
+          <p>📊​​Relatórios</p>
+          <p>⚙️configurações</p>
+        </div>
+      </section>
+      
+      <section class="cc box">
+        <!--CAROUSEL - CARROSEL-->
+        <div class="container-carrosel">
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!--Carrosel 1° parte-->
+              <div class="carousel-item active">
+                <svg aria-label="Placeholder: Third slide"
+                  class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" height="0"
+                  preserveAspectRatio="xMidYMid slice" role="img" width="0" xmlns="http://www.w3.org/2000/svg">
+                  <img class="foto" src="shutterstock_165523199.jpg" class="d-block w-100" alt="...">
+                  <title>Placeholder</title>
+                  <rect width="100%" height=100%" fill="#555"></rect>
+                </svg>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Manicure</h5>
+                  <p>Profissional especialista em mãos e pés</p>
+                </div>
+              </div>
+              <!--Carrosel 2° parte-->
+              <div class="carousel-item">
+                <svg aria-label="Placeholder: Third slide"
+                  class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" height="0"
+                  preserveAspectRatio="xMidYMid slice" role="img" width="0" xmlns="http://www.w3.org/2000/svg">
+                  <img class="foto" src="images.jpg" class="d-block w-100" alt="...">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#555"></rect>
+                </svg>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Cabeleireira</h5>
+                  <p>Profissinal especialista em cortes de cabelo e proceimentos variados</p>
+                </div>
+              </div>
+              <!--Carrosel 3° parte-->
+              <div class="carousel-item">
+                <svg aria-label="Placeholder: Third slide"
+                  class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" height="0"
+                  preserveAspectRatio="xMidYMid slice" role="img" width="0" xmlns="http://www.w3.org/2000/svg">
+                  <img class="foto" src="images (1).jpg" class="d-block w-100" alt="...">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#555"></rect>
+                </svg>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Massagista</h5>
+                  <p>Profissional especialista em massagem e liberação muscular</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </section>
+
+      <section class="cd box">
+        <div class="escritas">
+          <h2>Menu lateral</h2>
+          <p>🏡Dashboard</p>
+          <p>📁​Projetos</p>
+          <p>📊​​Relatórios</p>
+          <p>⚙️configurações</p>
+        </div>
+      </section>
+    </main>
+
+    <!--CARDS-->
+    <div class="row cards-3">
+
+      <!--PRIMEIRO CARD-->
+      <div class="col l4 m12 s12 flow-text mgbot20">
+        <a href="" target="">
+          <!--       TÍTULO        -->
+          <div class="cxtit">
+            <center>
+              <p class="titulo-chamada"><b>Manicure</b></p>
+            </center>
+          </div>
+          <!--       IMAGEM        -->
+        </a>
+        <div id="imagem-chama" class="imagem-chama"><ahref="" target="_parent"></a>
+          <center><a href="" target="">
+            </a><a href="" target="">
+              <img id="imagem-chama" class="activator fotochamadas3l responsive-img" src="shutterstock_165523199.jpg">
+            </a>
+          </center>
+        </div>
+        <!--       DESCRIÇÃO        -->
+        <!--       BOTÃO        -->
+        <center>
+          <a href="" target=""
+            class="botao-chama">Saiba Mais </a>
+        </center>
+      </div>
+      <!--SEGUNDO CARD-->
+      <div class="col l4 m12 s12 flow-text mgbot20">
+        <a href="" target="">
+          <!--       TÍTULO        -->
+          <div class="cxtit">
+            <center>
+              <p class="titulo-chama"><b>Cabeleireira</b></p>
+            </center>
+          </div>
+          <!--       IMAGEM        -->
+        </a>
+        <div id="imagem-chama" class="imagem-chama"><a href="" target="">
+          </a>
+          <center><a href="" target="">
+            </a><a href="" target="">
+              <img id="imagem-chama" class="activator fotochamadas3l responsive-img" src="images.jpg">
+            </a>
+          </center>
+        </div>
+        <!--       DESCRIÇÃO        -->
+        <!--       BOTÃO        -->
+        <center>
+          <a href="" target="_parent"
+            class="botao-chama">Saiba Mais </a>
+        </center>
+      </div>
+      <!--SEGUNDO CARD-->
+      <div class="col l4 m12 s12 flow-text mgbot20">
+        <a href="/Servicos/2135/Massagem-Feminina" target="_parent">
+          <!--       TÍTULO        -->
+          <div class="cxtit">
+            <center>
+              <p class="titulo-chamada"><b>Massagista </b></p>
+            </center>
+          </div>
+          <!--       IMAGEM        -->
+        </a>
+        <div id="imagem-chama" class="waves-effect waves-block waves-light caixafotochamada"><a href=""target=""></a>
+          <center><a href="" target="">
+            </a><a href="" target="">
+              <img id="imagem-chama" class="activator fotochamadas3l responsive-img" src="images (1).jpg">
+            </a>
+          </center>
+        </div>
+        <!--       DESCRIÇÃO        -->
+        <!--       BOTÃO        -->
+        <center>
+          <a href="" target=""
+            class="botao-chama">Saiba Mais </a>
+        </center>
       </div>
     </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 
-<!--FOOTER - RODAPÉ-->
-<footer class="bg-black text-white py-3">
-    <div class="container">
+
+    <!--FOOTER - RODAPÉ-->
+    <footer class="bg-black text-white py-4">
+      <div class="container-fluid">
         <div class="row align-items-center">
-
-            <!-- Nome da empresa -->
-            <div class="col-md-6">
-                <h5 class="mb-0">FrontStyle</h5>
-            </div>
-
-            <!-- Espaço para futuros itens -->
-            <div class="col-md-6 text-md-end">
-                <!-- Você pode adicionar redes sociais, contatos, etc. -->
-            </div>
-
+          <!-- Nome da empresa -->
+          <div class="col-md-6 ps-0">
+            <h5 id="titufooter" class="mb-0">FrontStyle</h5>
+          </div>
+          <!-- Ícone das redes alinhados à direita -->
+          <div class="col-md-6 text-md-end mt-0 mt-md-0">
+            <p class="mb-0">Instagram</p>
+          </div>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-
-<!--Adicionar as imagens ao carrocel e formata-lo para ficar com a escrita encima-->
 
 </body>
+
 </html>

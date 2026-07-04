@@ -57,5 +57,158 @@
 .brake .nav-link {
     width: 980px;
 }
+/*Foto do carrosel*/
+.foto {
+    width: 1000px;
+    padding-left: 0px;
+    border-radius: 5px;
+}
 /*Rodapé do site*/
+#titufooter {
+    padding-left: 20px;
+}
+footer {
+    padding: 0;
+}
+
+/*Box do meio do site, divide a parte central das partes laterais*/
+.layout-3cols{
+    display:flex;
+    flex-wrap:nowrap;
+    width:100%;
+    margin-top:0;
+}
+
+/* Cards: manter 3 lado a lado e evitar que linhas “quebrem” por altura */
+.row.cards-3{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:stretch;
+    gap: 0;
+}
+
+.row.cards-3 > .col{
+    flex: 1 1 0;
+    display:flex;
+    align-items:stretch;
+}
+
+.row.cards-3 > .col > a{
+    display:flex;
+    width:100%;
+}
+
+
+.box {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.ce {
+    width: 33.33%;
+    min-height: 400px;
+    border: none;
+    background-color: rgb(244, 244, 244);
+}
+
+.cc {
+    width: 33.33%;
+    min-height: 400px;
+    border: none;
+    background-color: rgb(244, 244, 244);
+}
+
+.cd {
+    width: 33.33%;
+    min-height: 400px;
+    border: none;
+    background-color: rgb(244, 244, 244);
+}
+
+.geral {
+    font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Ajuste para o carousel ocupar toda a coluna do meio */
+.cc .carousel,
+.cc .carousel-inner,
+.cc .carousel-item{
+    width:100%;
+}
+
+.cc .carousel-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/*Escrita card*/
+.cxtit{
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.48rem;
+    -webkit-tap-highlight-color: transparent;
+    font-weight: bold;
+    color: #010101;
+    box-sizing: inherit;
+    padding: 0px;
+    border: 0px;
+    width: 100%;
+    text-align: center;
+    border-radius: 3px;
+    margin: 15px 0 0 0;
+}
+.botao-chama {
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 300;
+    font-size: 1.48rem;
+    box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    }
+/* Card layout: título acima da imagem e botão abaixo */
+.row.cards-3 > .col{
+    display:flex;
+    flex-direction:column;
+}
+
+.row.cards-3 > .col .cxtit{
+    margin-top:0;
+}
+
+/* Mantém a imagem abaixo do título */
+.row.cards-3 > .col a + #imagem-chama,
+#imagem-chama{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+/* Botão sempre fica no final do card */
+.row.cards-3 > .col center{
+    width:100%;
+    margin-top:auto;
+}
+
+/* fallback para imagem container */
+.imagem-chama{
+    width:100%;
+}
+
+#imagem-chama{
+    width: 100%;
+    height: 260px;
+}
 
