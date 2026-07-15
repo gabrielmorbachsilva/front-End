@@ -237,5 +237,9 @@ footer {
 .botao-chama:hover {
     transform: scale(1.1);
 }
-
+.btn-login{
+    padding: 2px 12px;   /* altura e largura */
+    font-size: 15px;
+    line-height: 1.2;
+}
 
