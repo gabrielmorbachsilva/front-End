@@ -53,6 +53,10 @@
     color: black;
     transform: scale(1.1);
 }
+.nav-item7 .nav-link{
+    border-radius: 5px;
+    display: none;
+}
 /*Espaço entre a tag localização e login*/
 .brake .nav-link {
     width: 980px;
