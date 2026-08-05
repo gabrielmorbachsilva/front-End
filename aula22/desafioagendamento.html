@@ -29,46 +29,46 @@
         <div class="collapse navbar-collapse" id="navbarColor01">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item1">
-              <a class="nav-link" href="#">
+              <button class="btn btn-agendar nav-link" type="button" data-bs-toggle="modal" data-bs-target="">
                 <font dir="auto" style="vertical-align: inherit;">
                   <font dir="auto" style="vertical-align: inherit;">Serviços</font>
                 </font>
-              </a>
+              </button>
             </li>
             <li class="nav-item2">
-              <a class="nav-link" href="#">
+              <button class="btn btn-agendar nav-link" type="button" data-bs-toggle="modal" data-bs-target="">
                 <font dir="auto" style="vertical-align: inherit;">
                   <font dir="auto" style="vertical-align: inherit;">Produtos</font>
                 </font>
-              </a>
+              </button>
             </li>
             <li class="nav-item3">
-              <a class="nav-link" href="#">
+              <button class="btn btn-agendar nav-link" type="button" data-bs-toggle="modal" data-bs-target="#modalAgendamento">
                 <font dir="auto" style="vertical-align: inherit;">
                   <font dir="auto" style="vertical-align: inherit;">Agendamentos</font>
                 </font>
-              </a>
+              </button>
             </li>
             <li class="nav-item4">
-              <a class="nav-link" href="#">
+              <button class="btn btn-agendar nav-link" type="button" data-bs-toggle="modal" data-bs-target="">
                 <font dir="auto" style="vertical-align: inherit;">
                   <font dir="auto" style="vertical-align: inherit;">Contato</font>
                 </font>
-              </a>
+              </button>
             </li>
             <li class="nav-item5">
-              <a class="nav-link" href="#">
+              <button class="btn btn-agendar nav-link" type="button" data-bs-toggle="modal" data-bs-target="">
                 <font dir="auto" style="vertical-align: inherit;">
                   <font dir="auto" style="vertical-align: inherit;">Localização</font>
                 </font>
-              </a>
+              </button>
             </li>
             <li class="brake">
-              <a class="nav-link" href="#">
+              <button class="btn btn-agendar nav-link" type="button" data-bs-toggle="modal" data-bs-target="">
                 <font dir="auto" style="vertical-align: inherit;">
                   <font dir="auto" style="vertical-align: inherit;"></font>
                 </font>
-              </a>
+              </button>
             </li>
             <li id="btLogin" class="nav-item6">
               <a class="nav-link" href="#">
@@ -84,7 +84,7 @@
             <li id="msLogin" class="nav-item7">
               <a class="nav-link" href="#">
                 <font dir="auto" style="vertical-align: inherit;">
-                  <font dir="auto" style="vertical-align: inherit;">Bem vindo, admin !</font>
+                  <font dir="auto" style="vertical-align: inherit;">Bem vindo, admin!</font>
                 </font>
               </a>
             </li>
@@ -272,15 +272,15 @@
             <div class="col-md-6 text-md-end">
 
               <a href="#" class="text-white fs-3 me-3">
-                <i class="bi bi-instagram"></i>
+                <i class="bi bi-instagram">frontstyle_it</i>
               </a>
 
               <a href="#" class="text-white fs-3 me-3">
-                <i class="bi bi-facebook"></i>
+                <i class="bi bi-facebook">FrontStyle_fb</i>
               </a>
 
               <a href="#" class="text-white fs-3">
-                <i class="bi bi-tiktok"></i>
+                <i class="bi bi-tiktok">FrontStyle_tk</i>
               </a>
 
             </div>
@@ -315,13 +315,71 @@
       </div>
     </div>
   </div>
+<!-- MODAL DE AGENDAMENTO - TODA A TELA -->
+  <div class="modal fade" id="modalAgendamento" tabindex="-1" aria-labelledby="tituloAgendamento" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title" id="tituloAgendamento">📅 Agendar Atendimento</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <form id="formAgendamento">
+            <div class="row">
+              <!-- DADOS PESSOAIS -->
+              <div class="col-md-6">
+                <h4 class="mb-3 text-center">Dados Pessoais</h4>
+                <div class="mb-3">
+                  <label for="nomeCliente" class="form-label">Nome completo</label>
+                  <input id="nomeCliente" type="text" class="form-control" placeholder="Digite seu nome" required>
+                </div>
+                <div class="mb-3">
+                  <label for="emailCliente" class="form-label">Email</label>
+                  <input id="emailCliente" type="email" class="form-control" placeholder="Seu email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="telefoneCliente" class="form-label">Telefone</label>
+                  <input id="telefoneCliente" type="tel" class="form-control" placeholder="(00) 00000-0000" required>
+                </div>
+              </div>
+              <!-- ESCOLHER O PROCEDIMENTO -->
+              <div class="col-md-6">
+                <h4 class="mb-3 text-center">Procedimento</h4>
+                <div class="mb-3">
+                  <label for="procedimento" class="form-label">Escolha o serviço</label>
+                  <select id="procedimento" class="form-select" required>
+                    <option value="" selected disabled>Selecione um procedimento...</option>
+                    <option value="Manicure">💅 Manicure</option>
+                    <option value="Cabeleireira">💇‍♀️ Cabeleireira</option>
+                    <option value="Massagista">💆‍♂️ Massagista</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="dataAgendamento" class="form-label">Data</label>
+                  <input id="dataAgendamento" type="date" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                  <label for="horaAgendamento" class="form-label">Horário</label>
+                  <input id="horaAgendamento" type="time" class="form-control" required>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-3">
+              <button type="submit" class="btn btn-success btn-lg px-4">✅ Confirmar Agendamento</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- JS Bootstrap -->
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!--Conferir se funcionou a adição de displays para retirar os botoes e colocar a escrita de bem vindo
-  retirar as linhas do lado dos icones de rede social
-  após estes dois realizar a guarda dos arquivos de quem fizer o login, para nas proximas vezes já tiver a validação de login -->
+  <!--realizar a guarda dos arquivos de quem fizer o login, para nas proximas vezes já tiver a validação de login
+  realizar a modal de agendamento
+  testar
+  mostrar ao professor -->
 
 </body>
 
